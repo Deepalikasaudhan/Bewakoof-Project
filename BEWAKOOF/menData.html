@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion - Shop Men Clothing Online in India | Bewakoof</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   
+    <link rel="stylesheet" href="menData.css">
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+    
+        a:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+        #navbar{
+            width:100%;
+            height:100px;
+            margin:auto;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            background-color: aliceblue;
+        }
+
+        #navbar>:nth-child(1){
+            font-size: 40px;
+        }
+
+        #navbar>:nth-child(2)>button{
+            font-size: larger;
+            width:100px;
+            margin-right: 20px;
+            border-radius: 20px;
+        }
+
+        #navbar>:nth-child(2)>button:hover{
+            background-color: aqua;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div id="uper">
+        <!---------------------------------------- Top bar Start------------------------------------------------------>
+        <div id="top">
+          <div>
+            <ol>
+                <li><a href="offer.html">Offer</a></li>
+                <li><a href="facebook.html">Facebook</a></li>
+                <span><ion-icon name="phone-portrait-outline"></ion-icon></span>
+                <li><a href="index.html">Download App</a></li>
+                <li><a href="tribe.html">Tribe Membership</a></li>
+            </ol>
+          </div>
+          <div>
+            <ol>
+                <li><a href="#">Contact US</a></li>
+                <li><a href="cart.html">Track Order</a></li>
+            </ol>
+          </div>
+        </div>
+        <!----------------------------------------- Top Bar End------------------------------------------------------->
+      
+      <!-------------------------------------------Nav Start-------------------------------------------------------->
+    
+      <!-------------------------------------------------- Left Side----------------------------------------------->
+      <div id="nav">
+        <div>
+        <a href="index.html"><img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo-bday-y24.svg" alt="Bewakoof"></a>
+        <p><a href="menData.html" style="text-decoration: none; color: #000;">Mens</a></p>
+        <p><a href="womenData.html" style="text-decoration: none; color: #000;">Women</a></p>
+        <p><a href="moblieBrand.html" style="text-decoration: none; color: #000; word-spacing: -1px;">Moblie Covers</a></p>
+      </div>
+    
+      <!----------------------------------------- Right Side---------------------------------------------------------->
+       <div> 
+       <div class="sarchbar">
+          <span><ion-icon name="search-outline"></ion-icon></span>
+          <input type="text" placeholder="Search by Prodects, catergory or collection"      >
+        </div>
+        <div>
+        <p id="vericleLine"> | </p>
+        <p><a href="">Login</a></p>
+        <span><ion-icon name="heart-outline"></ion-icon></span>
+        <span><ion-icon name="bag-outline"></ion-icon></span>
+    
+        </div>
+        </div>
+      </div>
+      </div>
+        <!------------------------------------------------------ Nav End----------------------------------------------->
+        
+       
+    
+
+    <!-- [Main Page Below] -->
+  
+<br>
+<br>
+
+<div class="container">
+    <div class="mainHeading">
+    <div class="headingInner">
+            <h1 style="margin-top: 100px;">Men Clothing</h1>
+            <span style="margin-top: 100px;">(7303)</span>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+<div id="sort">
+    <p>Sort by category:</p>
+    <select id="filter">
+        <option value="All">All</option>
+        <option value="T-Shirt">T-Shirts</option>
+        <option value="Shirt">Shirts</option>
+        <option value="Boxer">Boxers</option>
+        <option value="Joggers">Joggers</option>
+        <option value="Vest">Vests</option>
+        <option value="Hoodie">Hoodies</option>
+    </select>
+</div>
+<div class="fil"><p>Filters</p></div>
+    <div id="contentWrap">
+        <div id="filters">
+            
+                <select id="priceFilter">
+                    <option value="">Price</option>
+                    <option value="Lower To High">Low to High</option>
+                    <option value="Higher To Lower">High to Low</option>
+                </select>
+            
+                <select id="sizeFilter">
+                    <option value="Size">Size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            
+                <select id="brandFilter">
+                    <option value="Brand">Brand</option>
+                    <option value="Bewakoof">Bewakoof</option>
+                    <option value="OFFICIAL MARVEL MERCHANDISE">Marvel</option>
+                    <option value="OFFICIAL DC COMICS MERCHANDISE">DC</option>
+                    <option value="PLAY by BEWAKOOF">Play</option>
+                </select>
+            
+        </div>
+        <div id="products">
+            <!-- Products will be appended here -->
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    let mensData = [
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Witcher Ability T-Shirt",
+        price: 369,
+        size: "S",
+        productID: "men1",
+        category: "T-Shirt",
+        img: "https://shop.bewakoof.com/cdn/shop/products/men-s-black-witcher-ability-t-shirt-390553-1709214827-1_e0e758d6-f4f9-401e-af3d-34cac2c1725f.jpg?v=1709642689&width=533"
+      },
+        {
+        brand: "Bewakoof",
+        name: "Men's Black Iron Men of War Graphic Pr... ",
+        price: 354,
+        size: "S",
+        productID: "men2",
+        category: "T-Shirt",
+        img: "https://shop.bewakoof.com/cdn/shop/products/iron-man-of-war-vest-avl-220651-1655748304-1.jpg?v=1709634837&width=360"
+      },
+     {
+        brand: "Bewakoof ",
+        name: "Men's Back Feel Most Alive Graphic Pri...",
+        price: 459,
+        size: "S",
+        productID: "men3",
+        category: "T-Shirt",
+        img: "https://shop.bewakoof.com/cdn/shop/products/men-s-black-feel-most-alive-graphic-printed-t-shirt-307093-1705996296-1_2e8e7a82-1949-4448-ab1b-2e5459cf403c.jpg?v=1709639057&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Black T-shirt ",
+        price: 449,
+        size: "S",
+        productID: "men4",
+        category: "T-Shirt",
+        img: "https://shop.bewakoof.com/cdn/shop/products/men-s-black-feel-most-alive-graphic-printed-t-shirt-307093-1705996296-1_2e8e7a82-1949-4448-ab1b-2e5459cf403c.jpg?v=1709639057&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 419,
+        size: "S",
+        productID: "men5",
+        category: "T-Shirt",
+        img: "https://shop.bewakoof.com/cdn/shop/products/men-dark-shadow-plain-vest-565939-1698919408-1.jpg?v=1709658938&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 319,
+        size: "S",
+        productID: "men6",
+        category: "T-Shirt",
+        img: "https://shop.bewakoof.com/cdn/shop/products/men-s-regular-fit-solid-t-shirt-3-608249-1702294952-1_8cd6bd00-57f7-49a8-b0da-d584fb033681.jpg?v=1709669443&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 364,
+        size: "S",
+        productID: "men7",
+        category: "T-Shirt",
+        img: "https://shop.bewakoof.com/cdn/shop/products/men-pink-plain-vest-2-581379-1686075801-1.jpg?v=1709661233&width=360"
+      },
+
+{
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 464,
+        size: "S",
+        productID: "men8",
+        category: "T-Shirt",
+        img: "https://shop.bewakoof.com/cdn/shop/products/men-s-black-oversized-vest-500149-1671022126-1.jpg?v=1709649910&width=360"
+      },
+   
+   {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 359,
+        size: "S",
+        productID: "men9",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/work-hard-box-full-sleeve-t-shirt-273065-1709274103-1_de21da4d-f78b-4149-b91a-0c300eab58cc.jpg?v=1709637027&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 649,
+        size: "S",
+        productID: "men10",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-white-oversized-t-shirt-439420-1701342781-1_c2c433ac-a62e-4c95-8821-285d7a98b66f.jpg?v=1709645509&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 499,
+        size: "S",
+        productID: "men11",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-red-oversized-t-shirt-439423-1706005503-1_dfa5892b-112f-4bab-a5bf-0dc51e325725.jpg?v=1709645517&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 429,
+        size: "S",
+        productID: "men12",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-green-t-shirt-580012-1698306269-1.jpg?v=1709660695&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 429,
+        size: "S",
+        productID: "men13",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/spaced-nasa-full-sleeve-t-shirt-475121-1675062587-1_9378b1cc-5e62-4cae-8b92-1d9702594468.jpg?v=1709647971&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 399,
+        size: "S",
+        productID: "men14",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-hope-street-typography-t-shirt-500392-1706598485-1_0bbbbba5-d305-4858-b6cd-711b3512356b.jpg?v=1709649953&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price:499 ,
+        size: "S",
+        productID: "men15",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-purple-t-shirt-546494-1678261271-1.jpg?v=1709655111&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 549,
+        size: "S",
+        productID: "men16",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-wakanda-forever-graphic-printed-oversized-t-shirt-565100-1708697812-1_1bc7b042-d145-4077-ae79-c160c41c5836.jpg?v=1709658855&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 549,
+        size: "S",
+        productID: "men17",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-kyuubi-mode-graphic-printed-oversized-t-shirt-565924-1708440556-1_2146f377-27b0-4e62-96a2-2254d533fb35.jpg?v=1709658919&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 599,
+        size: "S",
+        productID: "men18",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-white-vengeance-graphic-printed-oversized-t-shirt-624560-1700112992-1_b35483e2-888d-4bbf-bdef-fdd26d50fc3f.jpg?v=1709673385&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 449,
+        size: "S",
+        productID: "men19",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-green-oversized-t-shirt-580016-1698308549-1.jpg?v=1709660702&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 499,
+        size: "S",
+        productID: "men20",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-printed-regular-t-shirt-74-582888-1697139016-1.jpg?v=1709661867&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 549,
+        size: "S",
+        productID: "men21",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-the-traveller-printed-t-shirt-559449-1677764775-1_7d9d9e1e-90cc-410d-9da1-2236b70ee515.jpg?v=1709657654&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 419,
+        size: "S",
+        productID: "men22",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-green-oversized-t-shirt-540861-1673427164-1_cc14b607-ac2b-4adf-aa75-3ec8817711f2.jpg?v=1709654190&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 399,
+        size: "S",
+        productID: "men23",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-grey-t-shirt-580011-1698309316-1.jpg?v=1709660689&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 449,
+        size: "S",
+        productID: "men24",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-solid-oversized-t-shirt-2-582759-1701343834-1_8a415c67-bc27-451d-8b6c-967f947ea7eb.jpg?v=1709661758&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 449,
+        size: "S",
+        productID: "men25",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-solid-oversized-t-shirt-4-582750-1701342923-1_42c7a685-ba95-4a6f-a80b-6841bad7c9b4.jpg?v=1709661743&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 469,
+        size: "S",
+        productID: "men26",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-dope-bear-graphic-printed-oversized-t-shirt-547532-1709216642-1_5fc29d98-3b18-4bcc-8b5e-369bdca451e6.jpg?v=1709655317&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 629,
+        size: "S",
+        productID: "men27",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-purple-oversizedt-shirt-507614-1685708161-1_a99e0e25-3cb5-400a-9e1f-66cc6673d88b.jpg?v=1709650571&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 549,
+        size: "S",
+        productID: "men28",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-oversized-fit-t-shirt-439435-1708957180-1_5925b4c5-69b2-4f05-85e0-2f25aaf4cd23.jpg?v=1709645512&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 449,
+        size: "S",
+        productID: "men29",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-grey-oversized-t-shirt-580015-1698308036-1.jpg?v=1709660698&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Grey Oversized Vest ",
+        price: 439,
+        size: "S",
+        productID: "men30",
+        category: "T-Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-solid-oversized-t-shirt-1-582749-1701342880-1_3142040a-ec8f-493e-b771-02e5cefe6a7d.jpg?v=1709661744&width=360"
+      },
+             
+    {
+        brand: "Bewakoof",
+        name: "Men's Black Placket Print Shirt ",
+        price: 899,
+        size: "X,XX,XXL",
+        productID: "men5",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-superloose-aop-shirt-15-586194-1693911006-1.jpg?v=1709662666&width=360g"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Winter Moss Full Sleeve Shirt ",
+        price: 899,
+        size: "XS",
+        productID: "men6",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-white-black-mickey-graphic-printed-super-loose-fit-shirt-586228-1704958381-1_f782d66b-b371-452a-a05d-926454a76035.jpg?v=1709662693&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: " Men's Relaxed Fit Grey Solid Short Kurta",
+        price: 1699,
+        size: "XS",
+        productID: "men7",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/files/men-s-dark-olive-green-loon-printed-oversized-shacket-604448-1707200356-1_13aabfcc-80b7-41df-8f04-cb551707d99d.jpg?v=1712642252&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/files/men-s-white-all-over-printed-half-sleeve-shirt-624395-1711613704-1_eaa27489-418d-417b-80c1-2a636618ed67.jpg?v=1712642323&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price:1099 ,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/files/men-s-black-checked-oversized-shirt-620474-1712055964-1_3a0a7e96-8fa2-4150-ab39-32cec7ea1926.jpg?v=1712642286&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 899,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-striped-oversized-shirt-597301-1704957705-1_9fbc9faa-d4d0-422d-95ad-6b1bc3577299.jpg?v=1710455591&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-all-over-printed-half-sleeve-oversized-shirt-624422-1710152226-1.jpg?v=1710759337&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-multicolor-all-over-printed-shirt-624314-1710152407-1.jpg?v=1710232823&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-all-over-printed-oversized-half-sleeve-shirt-624383-1710152328-1.jpg?v=1710232821&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 1399,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-multicolor-all-over-printed-half-sleeve-shirt-624388-1710152768-1.jpg?v=1710232822&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-multicolor-all-over-printed-half-sleeve-shirt-624410-1710152659-1.jpg?v=1710242362&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-multicolor-aop-all-over-printed-oversized-shirt-624408-1709558900-1.jpg?v=1710311484&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-all-over-printed-oversized-half-sleeve-shirt-624385-1709559137-1.jpg?v=1710232823&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-all-over-printed-half-oversized-shirt-624403-1709559257-1.jpg?v=1710232822&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 1299,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-loon-printed-oversized-shacket-604479-1707200545-1_6aa4f2b0-9157-493d-acad-128817910ed3.jpg?v=1709668719&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 1299,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-jap-printed-oversized-shirt-604483-1707200966-1_0282c388-c811-4836-a776-81b75236351f.jpg?v=1709668720&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/files/men-s-white-all-over-printed-shirt-624322-1711613589-1_ed5e30a0-9e68-446d-86de-a807d8695be9.jpg?v=1712642298&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-multicolor-all-over-printed-half-oversized-shirt-624417-1709558388-1.jpg?v=1710234264&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-all-over-printed-shirt-624365-1709558173-1.jpg?v=1710242361&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/files/men-s-multicolor-all-over-printed-shirt-624320-1711613646-1_f0a36da4-750c-4a79-a417-d28ff81fa19e.jpg?v=1712675952&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/files/men-s-blue-all-over-printed-shirt-624327-1711613760-1_14a77a8d-cf7c-45b7-8a04-3df105571b1d.jpg?v=1712642308&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/files/men-s-multicolor-all-over-printed-half-sleeve-shirt-624375-1711613618-1_be72350e-4039-4f84-9e47-febbd30c1ba0.jpg?v=1712675912&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/files/men-s-blue-all-over-printed-oversized-half-sleeve-shirt-624396-1711607509-1_94ff297e-09da-461b-896e-cd578261d6cd.jpg?v=1712642328&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-all-over-printed-half-sleeve-oversized-shirt-624419-1710152690-1.jpg?v=1710232822&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 1599,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/files/men-s-black-nasa-graphic-printed-oversized-shirt-604478-1704958026-1.jpg?v=1712642262&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-multicolor-all-over-printed-oversized-shirt-620468-1704957822-1_88acfa81-3556-494f-a080-374ae4f406b1.jpg?v=1709672089&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Relaxed Fit White Solid Short Kurta ",
+        price: 999,
+        size: "XS",
+        productID: "men8",
+        category: "Shirt",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-multicolor-all-over-printed-oversized-shirt-620468-1704957822-1_88acfa81-3556-494f-a080-374ae4f406b1.jpg?v=1709672089&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Pink All Over Printed Boxers ",
+        price:359 ,
+        size: "XS",
+        productID: "men9",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-white-all-over-printed-boxers-570807-1688641847-1.jpg?v=1709659635&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Black All Over Flower Printed Boxers ",
+        price: 359,
+        size: "XS",
+        productID: "men10",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-multicolor-all-over-printed-boxers-570788-1683281008-1.jpg?v=1709659632&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Blue All Over Printed Boxers",
+        price: 362,
+        size: "M",
+        productID: "men11",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-olive-green-elasticated-solid-boxer-581630-1699525304-1.jpg?v=1709661352&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 309,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-white-all-over-printed-boxers-570856-1707292730-1_3cc691d2-8d5d-4a0e-a22c-fc097f70a63b.jpg?v=1709659660&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 335,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-white-all-over-printed-boxers-570850-1707292817-1_67fa95c1-7d2f-4183-a46d-0dbd8e5c9b31.jpg?v=1709659651&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 399,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-boxer-628774-1707976458-1_4758823a-22cf-4181-b61e-290900b2ba21.jpg?v=1709692355&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 399,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-all-over-printed-boxer-628775-1707976154-1.jpg?v=1709692346&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 399,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-all-over-printed-boxer-628782-1707976911-1_3b56a434-2c76-4138-8622-fe188a2ec715.jpg?v=1709692357&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 399,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-boxer-628776-1707977242-1.jpg?v=1709692353&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 399,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-brown-boxer-628781-1707976186-1_c3c66219-444f-4b89-8037-8d52b098ce3f.jpg?v=1709692360&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 399,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-all-over-printed-boxers-570843-1707292681-1_aac68579-463e-44dc-a12f-52c1c381bf23.jpg?v=1709659648&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 399,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-aop-inner-exposed-elastic-boxer-35-581633-1699525336-1.jpg?v=1709661354&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 329,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-aop-boxer-9-570844-1686200819-1.jpg?v=1709659657&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 399,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-inner-exposed-elastic-boxer-581593-1699525272-1_ef880325-c12d-4b7e-8b76-c5d4efba7a05.jpg?v=1709661327&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 349,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/jet-black-plain-boxer-26554-1659078235-1.jpg?v=1709633912&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 299,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/nebula-blue-plain-boxer-220705-1656140108-1.jpg?v=1709634844&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 319,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-all-over-leaves-printed-boxers-573961-1688538690-1.jpg?v=1709659911&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 349,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/red-passion-plain-boxer-233080-1661434306-1.jpg?v=1709635305&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 369,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-elasticated-solid-boxer-581590-1689936752-1.jpg?v=1709661332&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 399,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-navy-inner-exposed-elastic-boxer-581592-1699525239-1_19f71ba4-4ef6-475e-b144-6bfbb38bcdd1.jpg?v=1709661330&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Black Self Design Boxers ",
+        price: 749,
+        size: "M",
+        productID: "men12",
+        category: "Boxer",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/urban-scottish-men-s-printed-boxer-shorts-pack-of-2-413742-1655939908-1_cf9cc977-3673-470f-8c62-86ad33181f6d.jpg?v=1709643746&width=360"
+      },
+
+ {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 799,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-oversized-joggers-580384-1710770348-1.jpg?v=1710770431&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 799,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-brown-super-loose-fit-cargo-joggers-609811-1710768477-1.jpg?v=1710768549&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 899,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-sky-blue-cotton-jogger-pants-330846-1664197182-1.jpg?v=1709640040&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 799,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-ramen-jersey-graphic-printed-super-loose-fit-joggers-603161-1710769295-1.jpg?v=1710769363&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 799,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-olive-oversized-joggers-555634-1710767701-1.jpg?v=1710767801&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 899,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/sage-green-cotton-jogger-pants-330852-1663661717-1.jpg?v=1709640055&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 1199,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-brown-chaos-typography-cargo-joggers-584147-1710770126-1.jpg?v=1710770195&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 899,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-joggers-617412-1709805450-1.jpg?v=1709812283&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 899,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-grey-joggers-617485-1706071848-1_71aa55b7-e486-4ef3-9217-b8a653fe9af6.jpg?v=1709671115&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 999,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-brown-joggers-617413-1706071991-1_76f7470a-b525-4836-a491-9b5117fac1ac.jpg?v=1709671088&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 899,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-brown-super-loose-fit-joggers-624917-1710766538-1.jpg?v=1710766626&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 1299,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-white-nasa-badge-printed-super-loose-fit-joggers-602402-1710766181-1.jpg?v=1710766244&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 849,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-blue-oversized-cargo-joggers-620437-1710766130-1.jpg?v=1710766225&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 899,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-oversized-joggers-624660-1710765649-1.jpg?v=1710765730&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 900,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-grey-joggers-609817-1699376346-1_ea8516ae-3e73-4509-a5a2-c0070667f387.jpg?v=1709669904&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 1049,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-brown-super-loose-fit-joggers-609807-1710768360-1.jpg?v=1710768439&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 799,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/dark-grey-casual-jogger-pant-293066-1660652872-1.jpg?v=1709638288&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 899,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-brown-oversized-cargo-joggers-604230-1710769803-1.jpg?v=1710769875&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 999,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-green-oversized-cargo-joggers-552881-1710769630-1.jpg?v=1710769724&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 899,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-grey-oversized-cargo-joggers-604216-1710768678-1.jpg?v=1710768749&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 999,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-oversized-cargo-joggers-552880-1710766583-1.jpg?v=1710766678&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 799,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/jet-black-cotton-jogger-pants-330841-1656154853-1.jpg?v=1709640051&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 999,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-brown-oversized-cargo-joggers-604201-1710767428-1.jpg?v=1710767502&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 999,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-purple-super-loose-fit-cargo-joggers-604163-1710770493-1.jpg?v=1710770573&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 999,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-black-super-loose-fit-cargo-joggers-580389-1710767662-1.jpg?v=1710767733&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 799,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/prussian-blue-casual-jogger-pants-244784-1655750615-1_3ad225a3-db4e-4af2-904d-8d48851696a8.jpg?v=1709635917&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 799,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-purple-oversized-joggers-604221-1710764598-1.jpg?v=1710764669&width=360"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Plain Color Block Cargo Joggers ",
+        price: 1049,
+        size: "M",
+        productID: "men13",
+        category: "Joggers",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-s-brown-oversized-cargo-joggers-552891-1710765403-1.jpg?v=1710765503&width=360"
+      },
+ {
+        brand: "PLAY by BEWAKOOF",
+        name: "Men's Black Training Vest ",
+        price: 354,
+        size: "M",
+        productID: "men14",
+        category: "Vest",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/iron-man-of-war-vest-avl-220651-1655748304-1.jpg?v=1709634837&width=360"
+      },
+ {
+        brand: "PLAY by BEWAKOOF",
+        name: "Men's White Training Vest ",
+        price: 419,
+        size: "M",
+        productID: "men15",
+        category: "Vest",
+        img: "https://cdn.shopify.com/s/files/1/0794/6508/7270/products/men-dark-shadow-plain-vest-565939-1698919408-1.jpg?v=1709658938&width=360"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 499,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-black-happy-naruto-graphic-printed-boxy-fit-vest-624638-1696423851-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 399,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-gray-plain-vest-4-581384-1694764619-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 354,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-pink-plain-vest-2-581379-1686075801-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 489,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-black-oversized-vest-500149-1671022126-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 399,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-white-vest-210689-1686076172-5.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 594,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-black-super-loose-vest-516909-1671016205-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 449,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-green-cashtalk-graphic-printed-square-fit-vest-597314-1698067895-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 349,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-black-gohan-graphic-printed-vest-512881-1679049244-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price:499 ,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-brown-main-character-energy-graphic-printed-oversized-vest-636436-1712758802-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 394,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-black-second-to-none-typography-oversized-vest-538362-1694763079-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 399,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-blue-customizable-vest-635914-1711528829-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 649,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-black-immortal-graphic-printed-oversized-vest-635953-1711605258-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 319,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-navy-blue-vest-210690-1673255698-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 399,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-black-the-king-boxy-vest-567767-1679059992-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 499,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-ginger-root-printed-oversized-vest-627842-1707977785-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 799,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-dark-shadow-printed-oversized-vest-627834-1707976613-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 699,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-fired-brick-bone-white-color-block-oversized-hooded-vest-627844-1709557849-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 349,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-black-marvel-s-moon-knight-printed-vest-519785-1660226719-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 359,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-blue-icon-graphic-printed-boxy-fit-vest-595661-1703580271-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 329,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-brown-snoopy-jap-graphic-printed-boxy-fit-vest-605670-1693467275-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 479,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-green-find-your-path-graphic-printed-boxy-fit-vest-595644-1704190916-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 359,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-grey-icon-graphic-printed-boxy-fit-vest-595646-1703579850-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 449,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-black-wander-geometry-graphic-printed-square-fit-vest-595518-1686229567-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 449,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-brown-minions-great-chemistry-graphic-printed-boxy-fit-vest-605678-1694002607-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 409,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-blue-dementors-graphic-printed-vest-605745-1693479036-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 299,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-black-brain-wash-graphic-printed-vest-605742-1694764652-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 449,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-brown-mickey-faces-graphic-printed-boxy-fit-vest-605664-1692686402-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Blue Marvel Moon Knight Graphic Printed T-shirt ",
+        price: 329,
+        size: "L",
+        productID: "men16",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t640/men-s-brown-battle-scars-graphic-printed-boxy-fit-vest-605652-1692686234-1.jpg"
+      },
+      
+ {
+        brand: "Bewakoof",
+        name: "Men's Blue Busy Doing Nothing T-shirt",
+        price: 1,
+        size: "L",
+        productID: "men17",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/men-s-blue-busy-doing-nothing-t-shirt-287587-1651248151-1.jpg"
+      },
+ {
+        brand: "Bewakoof",
+        name: "Men's Black Witcher Ability T-shirt ",
+        price: 799,
+        size: "L",
+        productID: "men18",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/witcher-ability-half-sleeve-t-shirt-390553-1640087155-1.jpg"
+      },
+ {
+        brand: "Bewakoof ",
+        name: "Elite Ninja Round Neck Vest For Men's ",
+        price: 750,
+        size: "L",
+        productID: "men19",
+        category: "Vest",
+        img: "https://images.bewakoof.com/t540/elite-ninja-round-neck-vest-for-men-s-386574-1649687755-1.jpg"
+      },
+ {
+        brand: "OFFICIAL MARVEL MERCHANDISE",
+        name: "Men's White Mech Strike Chest Printed Oversized Fit T-shirt ",
+        price: 999,
+        size: "L",
+        productID: "men20",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/men-s-white-iron-man-grafitti-oversized-t-shirt-466330-1649266187-1.jpg"
+      },
+{
+        brand: "OFFICIAL DC COMICS MERCHANDISE",
+        name: "Men's Grey Batman Logo Blueprint Hoodie T-shirt ",
+        price: 1899,
+        size: "XL",
+        productID: "men22",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-godspeed-graphic-printed-oversized-hoodies-629649-1711721724-1.jpg"
+      },
+{
+        brand: "Bewakoof ",
+        name: "Men's Blue Busy Doing Nothing T-shirt",
+        price: 1099,
+        size: "XL",
+        productID: "men23",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/men-s-blue-busy-doing-nothing-t-shirt-287587-1651248151-1.jpg"
+      },
+{
+        brand: "Bewakoof ",
+        name: "Men's White T-shirt",
+        price: 1199,
+        size: "XL",
+        productID: "men24",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/white-full-sleeve-t-shirt-1093-1637995974-1.jpg"
+      },
+{
+        brand: "Bewakoof ",
+        name: " Men's Blue T-shirt",
+        price: 999,
+        size: "XL",
+        productID: "men25",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/navy-blue-half-sleeve-t-shirt-115-1646674268-1.jpg"
+      },
+{
+        brand: " Bewakoof",
+        name: "The Traveller Full Sleeve T-Shirt ",
+        price: 1299,
+        size: "XL",
+        productID: "men26",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/the-traveller-full-sleeve-t-shirt-276528-1638212427-1.jpg"
+      },
+{
+        brand: "Bewakoof",
+        name: "Men's Birthday Yellow T-shirt",
+        price: 699,
+        size: "XXL",
+        productID: "men27",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/men-s-birthday-yellow-t-shirt-444171-1648642208-1.jpg"
+      },
+{
+        brand: "Bewakoof",
+        name: "Sunset Block Half Sleeve T-Shirt",
+        price: 1099,
+        size: "XXL",
+        productID: "men28",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/sunset-block-half-sleeve-t-shirt-271582-1637854985-1.jpg"
+      },
+{
+        brand: "Bewakoof",
+        name: " Men's Blue T-shirt",
+        price: 1199,
+        size: "XXL",
+        productID: "men29",
+        category: "T-shirt",
+        img: "https://images.bewakoof.com/t540/navy-blue-full-sleeve-t-shirt-1092-1637995354-1.jpg"
+      },
+{
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1599,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-green-game-over-minimal-graphic-printed-oversized-hoodies-629679-1712058125-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1399,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-seeker-graphic-printed-super-loose-fit-hoodies-629652-1711722007-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1399,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-minions-me-want-banana-graphic-printed-super-loose-fit-hoodies-629671-1711720970-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1499,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-dark-side-graphic-printed-hoodies-628895-1711099283-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1499,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-the-warrior-king-graphic-printed-hoodies-629648-1708341214-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1599,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-green-cyber-samurai-graphic-printed-oversized-hoodies-629675-1708345641-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1599,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-green-beast-within-graphic-printed-oversized-hoodies-629676-1708345597-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1599,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-green-find-your-inner-minion-graphic-printed-oversized-hoodies-629651-1708345806-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1899,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-ghost-rider-graphic-printed-hoodies-628891-1711099201-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1499,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-maroon-phoenix-graphic-printed-hoodies-628883-1707199053-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1499,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-green-justice-league-graphic-printed-oversized-hoodies-628904-1707199016-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1299,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-blue-fear-nothing-graphic-printed-hoodies-628884-1704872784-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1199,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-grey-fear-nothing-graphic-printed-hoodies-628888-1704872498-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1299,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-numb-the-pain-graphic-printed-oversized-hoodies-626034-1704970396-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1699,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-blue-mickey-graphic-printed-oversized-hoodies-628324-1703651026-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1299,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-one-punch-man-graphic-printed-oversized-hoodies-628326-1703583353-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1349,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-bushido-clan-graphic-printed-super-loose-fit-hoodies-629254-1703842749-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1299,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-purple-numb-the-pain-graphic-printed-oversized-hoodies-626039-1705557028-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1299,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-grey-prototype-graphic-printed-hoodies-628328-1704866677-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1199,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-brown-the-saviour-graphic-printed-super-loose-fit-hoodies-628337-1702359164-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1299,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-align-graphic-printed-hoodies-628325-1703651100-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1699,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-blue-godspeed-graphic-printed-oversized-hoodies-625392-1707215390-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1699,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-grey-back-to-howgwarts-graphic-printed-hoodies-625621-1701150192-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1199,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-blue-printed-superloose-hoodies-601607-1697641848-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 999,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-grey-printed-superloose-hoodies-601614-1700047439-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1199,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-blue-oversized-hoodies-620452-1701347704-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1499,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-mickey-graphic-printed-oversized-hoodies-628323-1703650713-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1499,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-green-fear-nothing-graphic-printed-oversized-hoodies-628336-1703689189-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1499,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-mickey-graphic-printed-oversized-hoodies-628323-1703650713-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1499,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-green-fear-nothing-graphic-printed-oversized-hoodies-628336-1703689189-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1699,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-comickeyskingdom2-graphic-printed-hoodie-624115-1700560641-1.jpg"
+      },
+      {
+        brand: "Bewakoof",
+        name: "Men's Pink Kalyug Age of Machines Graphic Printed Hoodie T-shirt",
+        price: 1499,
+        size: "XXL",
+        productID: "men30",
+        category: "Hoodie",
+        img: "https://images.bewakoof.com/t640/men-s-black-chainsaw-man-graphic-printed-oversized-hoodies-625369-1703687599-1.jpg"
+      }
+       ];
+    
+       let displaydatamen=JSON.parse(localStorage.getItem("displayitemmen")) || []
+
+    let productsCont = document.getElementById("products");
+
+    let sortCatg=document.getElementById("filter");
+
+    let sortBrd=document.getElementById("brandFilter");
+
+    let sortSize=document.getElementById("sizeFilter");
+    
+
+    function displayProducts(mensData){
+        productsCont.innerHTML="";
+        mensData.forEach(function(element){
+            let product=document.createElement("div");
+
+            product.addEventListener("click",function(){
+                displayfunmen(element)
+            })
+          
+
+            let img=document.createElement("img");
+            img.src=element.img;
+            let name=document.createElement("h2");
+            name.innerText=element.brand;
+            let category=document.createElement("p");
+            category.innerText=element.name;
+            let price=document.createElement("h4");
+            price.innerText="₹"+element.price;
+
+            // img.addEventListener("click",function(){
+            //     window.location.href="https://www.google.com/"  //[Vinayak, Add your link here]
+            // })
+            product.append(img,name,category,price);
+            productsCont.append(product);
+        })
+    }
+
+
+    function displayfunmen (element){
+    event.target
+    console.log(element)
+    displaydatamen.push(element)
+    localStorage.setItem("displayitemmen",JSON.stringify(displaydatamen))
+    window.location.href="mensdisplay.html"
+}
+
+
+    displayProducts(mensData);
+
+    //[Function for Sort by category-]
+    sortCatg.addEventListener("change",function(){
+        if(sortCatg.value==="All"){
+            displayProducts(mensData);
+        }else{
+            let filtered=mensData.filter(function(element){
+                return element.category===sortCatg.value;
+            })
+            displayProducts(filtered);
+        }
+    })
+    //[Function for Sort by Brand-]
+    sortBrd.addEventListener("change",function(){
+        if(sortBrd.value==="Brand"){
+            displayProducts(mensData);
+        }
+        else
+        {
+            let filteredBr=mensData.filter(function(element){
+                return element.brand===sortBrd.value;
+            })
+            displayProducts(filteredBr);
+        }
+    })
+    //[Function for Sort by Size-]
+    sortSize.addEventListener("change",function(){
+        if(sortSize.value==="Size"){
+            displayProducts(mensData);
+        }
+        else
+        {
+            let filteredSz=mensData.filter(function(element){
+                return element.size===sortSize.value;
+            })
+            displayProducts(filteredSz);
+        }
+    })
+
+
+    // Filter by price
+
+        document.getElementById("priceFilter").addEventListener("change", priceFilter);
+
+        function priceFilter(){
+            let selected=document.querySelector("#priceFilter").value;
+
+            // console.log(selected)
+
+            if(selected=="Lower To High"){
+                let x=mensData.sort(function(a,b){
+                    if(a.price>b.price) return 1;
+                    if(a.price<b.price) return -1;
+
+                    return 0;
+                })
+                displayProducts(x);
+            }
+            else if(selected=="Higher To Lower"){
+                let x=mensData.sort(function(a,b){
+                    if(a.price>b.price) return -1;
+                    if(a.price<b.price) return 1;
+
+                    return 0;
+                })
+                displayProducts(x);
+            }
+        }
+
+</script>

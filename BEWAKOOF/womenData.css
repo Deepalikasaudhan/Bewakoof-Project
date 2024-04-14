@@ -1,0 +1,298 @@
+*{
+    margin: 0; 
+    padding: 0;
+    
+   
+    
+    /* font-family: sans-serif;*/
+}
+#uper{
+    position:fixed;
+    /* position: sticky; */
+    top: 0;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+
+}
+    
+   
+   
+    
+ 
+
+/************************************************ Top Bar CSS Start **********************************************/
+
+#top{
+   /* position: fixed; */
+    display: flex; 
+    width: 100%;
+    height: 25px;
+    background-color: rgba(218, 220, 225,0.9);
+}
+#top>div:first-child{
+    display: flex;
+    width: 60%;
+    margin-left: 70px;
+}
+#top>div:first-child>ol{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+#top>div:first-child>ol>li{
+    padding: 10px;
+    font-family: monospace;
+}
+#top>div:first-child>ol>li>a{
+    text-decoration: none;
+    color: #000;
+}
+#top>div:last-child{
+    display: flex;
+    width: 20%;
+    align-items: flex-end;
+    margin-left: 240px;
+}
+#top>div:last-child>ol{
+    display: flex;
+    list-style: none;
+}
+#top>div:last-child>ol>li{
+    padding: 10px;
+    margin-bottom: -3px;
+    font-family: monospace;
+}
+#top>div:last-child>ol>li>a{
+    text-decoration: none;
+    color: #000;
+}
+/************************************************** Top Bar CSS End**************************************************/
+
+
+/***************************************************** Nav CSS Start**********************************************/
+
+#nav{
+  
+  
+    width: 100%;
+    height: 53px;
+    border-bottom: 1px solid black;
+    display: flex;
+    
+}
+#nav>div:first-child{
+    
+    display: flex;
+    width: 60%;
+    margin-left: 50px;
+}
+#nav>div:first-child>a>img{
+    width: 50%;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+#nav>div:first-child>p{
+    margin-left: -16px;
+    padding: 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 35px;
+    margin-top: -10px;
+    font-family:  sans-serif;
+}
+#nav>div:first-child>p:hover{
+    border-bottom: 5px solid gold;
+    margin-bottom: -1px;
+}
+#nav>div:last-child{
+    display: flex;
+    width: 50%;
+    align-items: flex-end;
+}    
+#nav>div:last-child> .sarchbar{
+    width: 52%;
+    height: 40px;
+    border: 1px solid red;
+    margin-right:  25px ;
+    margin-bottom:8px;
+    border-radius: 5px 5px 5px 5px;
+    
+    background: #eaeaea;
+    outline: none;
+    border: none;
+}
+#nav>div:last-child> .sarchbar>span{
+    margin-left: 19px;
+ }
+ .sarchbar>input{
+    width: 85%;
+    height: 90%;
+    outline: none;
+    border: none;
+    background: #eaeaea;
+    margin-top: 2px;
+   margin-left: 4px;
+}
+
+#nav>div:last-child>div:last-child{
+    display: flex;
+    /* margin-bottom: 18px; */
+    align-items: center;
+}
+#nav>div:last-child>div:last-child>p{
+    font-size: 20px;
+    /* margin-top: 7px; */
+}
+#vericleLine{
+   margin-right: 15px; 
+  margin-bottom: 9px;
+ 
+}
+
+#vericleLine+p{
+    color: rgb(51, 110, 110);
+    margin-bottom: 10px;
+}
+
+#vericleLine+p>a{
+
+text-decoration: none;
+color: black;
+
+}
+#vericleLine+p+span{
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 8px;
+
+}
+#vericleLine+p+span+span{
+padding: 5px;
+font-size: 25px;
+margin-bottom: 8px;
+font-family: sans-serif;
+
+}
+
+/************************************************ Nav CSS End  ****************************************************/
+
+
+
+#products{
+    display:grid;
+    /* height: 200px; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap:1px 20px;
+    /* width: 70%;  */
+    /* border:1px solid green; */
+}
+#products{
+    width: 80%;
+}
+
+#products>div>img{
+    width:70%;
+    height:80%;
+   
+    /* border:1px solid blue; */
+}
+#products>div>h2{
+    color: #4f5362;
+    font-family: montserrat-semibold,sans-serif!important;
+    font-size: 13px!important;
+    line-height: 15px!important;
+}
+#products>div>p{
+    margin-top: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: montserrat-regular,sans-serif!important;
+    font-size: 11px!important;
+    line-height: 12px!important;
+}
+#products>div>button{
+    border:1px solid #ffff00;
+    background-color: white;
+    height:30px;
+    width:100px;
+    border-radius: 5px;
+}
+#products>div>button:hover{
+    /* box-shadow: 5px 10px #888888; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#sort{
+    display:flex;
+    justify-content: flex-end;
+    width:80%;
+    margin:auto;
+    /* border:1px solid; */
+    /* margin-right: 30px; */
+    gap:10px;
+}
+.fil{
+    display:flex;
+    justify-content: flex-start;
+    width:80%;
+    margin:auto;
+    /* border: 1px solid; */
+
+}
+.fil>p{
+        line-height: normal;
+        float: left;
+        color: rgba(45,45,45,.5);
+        font-family: montserrat-bold,sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin: 0 8px 0 0;
+}
+.headingInner{
+    display: flex;
+    width:80%;
+    gap: 10px;
+    /* border: 1px solid; */
+    align-items: center;
+    margin:auto;
+    /* margin-bottom: 20px; */
+}
+.headingInner>h1{
+    font: 700 24px montserrat-bold,sans-serif;
+    text-align: center;
+    display: inline-block;
+    float: none;
+    color: #2d2d2d;
+}
+.headingInner>span{
+    font-size: 20px;
+    font-family: montserrat-regular, sans-serif;
+    color:#949494
+}
+#contentWrap{
+    display:flex;
+    /* border:1px solid red; */
+    width:80%;
+    margin:auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+#filters{
+    width:25%;
+    /* border:1px solid; */
+    display:block;
+}
+#filters>select{
+    width:100%;
+    border:transparent;
+    margin-bottom: 20px;
+    /* How to underline these filters ? */
+}
+#products{
+    width:74%;
+}

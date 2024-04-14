@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Fashion - Shop Women Clothing Online in India | Bewakoof</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   
+    <link rel="stylesheet" href="womenData.css">
+
+</head>
+<body>
+    <div id="uper">
+        <!---------------------------------------- Top bar Start------------------------------------------------------>
+        <div id="top">
+          <div>
+            <ol>
+                <li><a href="offer.html">Offer</a></li>
+                <li><a href="facebook.html">Facebook</a></li>
+                <span><ion-icon name="phone-portrait-outline"></ion-icon></span>
+                <li><a href="index.html">Download App</a></li>
+                <li><a href="tribe.html">Tribe Membership</a></li>
+            </ol>
+          </div>
+          <div>
+            <ol>
+                <li><a href="#">Contact US</a></li>
+                <li><a href="cart.html">Track Order</a></li>
+            </ol>
+          </div>
+        </div>
+        <!----------------------------------------- Top Bar End------------------------------------------------------->
+      
+      <!-------------------------------------------Nav Start-------------------------------------------------------->
+    
+      <!-------------------------------------------------- Left Side----------------------------------------------->
+      <div id="nav">
+        <div>
+        <a href="index.html"><img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo-bday-y24.svg" alt="Bewakoof"></a>
+        <p><a href="menData.html" style="text-decoration: none; color: #000;">Mens</a></p>
+        <p><a href="womenData.html" style="text-decoration: none; color: #000;">Women</a></p>
+        <p><a href="moblieBrand.html" style="text-decoration: none; color: #000; word-spacing: -1px;">Moblie Covers</a></p>
+      </div>
+    
+      <!----------------------------------------- Right Side---------------------------------------------------------->
+       <div> 
+       <div class="sarchbar">
+          <span><ion-icon name="search-outline"></ion-icon></span>
+          <input type="text" placeholder="Search by Prodects, catergory or collection"      >
+        </div>
+        <div>
+        <p id="vericleLine"> | </p>
+        <p><a href="">Login</a></p>
+        <span><ion-icon name="heart-outline"></ion-icon></span>
+        <span><ion-icon name="bag-outline"></ion-icon></span>
+    
+        </div>
+        </div>
+      </div>
+      </div>
+        <!------------------------------------------------------ Nav End----------------------------------------------->
+<br>
+<br>
+
+<div class="container">
+    <div class="mainHeading">
+        <div class="headingInner">
+            <h1 style="margin-top: 100px;">Women Clothing</h1>
+            <span style="margin-top: 100px;">(7303)</span>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+<div id="sort">
+    <p>Sort by category:</p>
+    <select id="filter">
+        <option value="All">All</option>
+        <option value="T-shirt">T-Shirts</option>
+        <option value="Dress">Dress</option>
+        <option value="Jeans">Jeans</option>
+        <option value="Casual Pants">Casual Pants</option>
+        
+    </select>
+</div>
+<div class="fil"><p>Filters</p></div>
+    <div id="contentWrap">
+        <div id="filters">
+            
+                <select id="priceFilter">
+                    <option value="price">Price</option>
+                    <option value="Lower To High">Low to High</option>
+                    <option value="Higher To Lower">High to Low</option>
+                </select>
+            
+                <select id="sizeFilter">
+                    <option value="Size">Size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            
+                <select id="brandFilter">
+                    <option value="Brand">Brand</option>
+                    <option value="Bewakoof">Bewakoof</option>
+                    <option value="Harpa">Harpa</option>
+                    <option value="High Star">High Star</option>
+                    <option value="Kotty">Kotty</option>
+                </select>
+            
+        </div>
+        <div id="products">
+            <!-- Products will be appended here -->
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    let womensData= [
+
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-boyfriend-t-shirt-119167-1674217172-5.jpg" ,
+            name:"Women's Pink Everyday Mood Graphic Printed Oversized T-shirt",
+            brand:"Harpa",
+            price:399,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom1"
+        },
+        
+        {
+            img:"https://images.bewakoof.com/t640/fragile-boyfriend-t-shirt-516553-1657179813-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:499,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        
+        {
+            img:"https://images.bewakoof.com/t640/women-s-boyfriend-t-shirts-2-581051-1684862664-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 399,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-peace-seeker-graphic-printed-boyfriend-t-shirt-621318-1701114953-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:407,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-blue-solid-tshirt-23-582040-1688996238-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:519,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-watermelon-sugar-graphic-printed-boyfriend-t-shirt-546549-1682403846-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:419,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-purple-oversized-t-shirt-581059-1698407790-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:399,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-calm-down-graphic-printed-oversized-t-shirt-625585-1708436789-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 489,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-been-there-boyfriend-t-shirt-482681-1655751940-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 419,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-expecto-graphic-printed-oversized-t-shirt-589280-1708436847-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:479,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-lumos-graphic-printed-boyfriend-t-shirt-589157-1682662875-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:419,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-oversized-t-shirt-502793-1700136632-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:449,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-jasmine-green-plain-plain-t-shirt-538099-1701778668-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:429,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-money-don-t-jiggle-graphic-printed-boyfriend-t-shirt-540873-1682403633-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:409,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-keep-listening-boyfriend-t-shirt-468158-1655941839-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:309,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-peeking-army-graphic-printed-boyfriend-t-shirt-519415-1680593017-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 399,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/lilac-bloom-half-sleeve-t-shirt-346170-1665664695-6.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price:349,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-stay-hydrated-back-graphic-printed-oversized-t-shirt-492911-1708436835-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 519,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-purple-oversized-t-shirt-502755-1700657112-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 489,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-aop-oversize-t-shirt-7-580365-1688995847-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 484,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-purple-oversized-t-shirt-507615-1675195034-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 429,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-white-freinds-life-m-printed-t-shirt-534623-1673585035-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 539,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-killer-mode-graphic-printed-oversized-t-shirt-594431-1708436795-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 481,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-boyfriend-t-shirt-582070-1698305484-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 359,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-motd-panda-t-shirt-479771-1655815714-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 399,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-pink-avoiding-responsibilities-graphic-printed-t-shirt-585778-1682002484-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 449,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-pink-party-planning-committee-graphic-printed-oversized-t-shirt-585749-1708519418-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 469,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-ocean-child-graphic-printed-oversized-t-shirt-610991-1708436823-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 484,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/young-forever-side-boyfriend-t-shirt-white-women-s-printed-boyfriend-t-shirts-277591-1597074672.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 349,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-purple-power-up-graphic-printed-oversized-t-shirt-516913-1694764424-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 449,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-plain-oversized-fit-t-shirt-24-616047-1698407714-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 319,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-purple-billionaire-girls-club-graphic-printed-oversized-t-shirt-604125-1708349620-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 479,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-be-you-graphic-printed-boyfriend-t-shirt-608334-1691498631-1.jpg",
+            name:"Women's Purple Avoiding Responsibilities Graphic Printed Boyfriend T-shirt",
+            brand:"Harpa",
+            price: 379,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom2"
+        },
+
+            {img:"https://images.bewakoof.com/original/women-s-black-friends-typography-boyfriend-t-shirt-234669-1651240018-1.jpg?tr=q-100",
+            name:"Women's Black Friends Typography Boyfriend T-shirt",
+            brand:"Harpa",
+            price:275,
+            size:"S",
+            category:"T-shirt",
+            productID:"wom3"},
+
+            {img:"https://images.bewakoof.com/t540/cup-of-care-boyfriend-t-shirt-bold-red-312140-1638021138-1.jpg",
+            name:"Cup Of Care Boyfriend T-Shirt Bold Red",
+            brand:"Harpa",
+            price:275,
+            size:"S",
+            category:"T-Shirt",
+            productID:"wom4"},
+
+            {img:"https://images.bewakoof.com/t540/bewakoof-women-white-minimal-believe-boyfriend-t-shirts-502411-1653553114-1.jpg",
+            name:"Women's White Believe Typography Boyfriend T-shirt",
+            brand:"Harpa",
+            price:499,
+            size:"S",
+            category:"T-Shirt",
+            productID:"wom5"},
+
+            {img:"https://images.bewakoof.com/t540/peageant-blue-v-neck-striped-sleeves-t-shirt-330298-1635869736-1.jpg",
+            name:"Peageant Blue V Neck Striped Sleeves T-Shirt",
+            brand:"Bewakoof",
+            price:499,
+            size:"S",
+            category:"T-Shirt",
+            productID:"wom6"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-black-t-shirt-232388-1651248108-1.jpg",
+            name:"Women's Black T-shirt",
+            brand:"Bewakoof",
+            price:349,
+            size:"XS",
+            category:"T-Shirt",
+            productID:"wom7"},
+
+            {
+            img:"https://images.bewakoof.com/t640/women-s-grey-oversized-dress-582067-1708519423-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:534,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/fragile-boyfriend-t-shirt-516553-1657179813-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:449,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-boyfriend-t-shirts-2-581051-1684862664-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:399,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-all-over-printed-oversized-dress-582002-1707221737-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:489,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-watermelon-sugar-graphic-printed-boyfriend-t-shirt-546549-1682403846-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:419,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-peace-seeker-graphic-printed-boyfriend-t-shirt-621318-1701114953-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price: 407,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-blue-solid-tshirt-23-582040-1688996238-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:519,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-blue-solid-dress-42-582050-1704087354-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price: 504,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-purple-oversized-t-shirt-581059-1698407790-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:399,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-purple-oversized-t-shirt-581059-1698407790-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:399,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-calm-down-graphic-printed-oversized-t-shirt-625585-1708436789-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:489,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-been-there-boyfriend-t-shirt-482681-1655751940-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:419,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-expecto-graphic-printed-oversized-t-shirt-589280-1708436847-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price: 479,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-all-over-printed-oversized-dress-582003-1707215227-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:539,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-oversized-t-shirt-502793-1700136632-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:449,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-jasmine-green-plain-plain-t-shirt-538099-1701778668-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:429,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-money-don-t-jiggle-graphic-printed-boyfriend-t-shirt-540873-1682403633-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:409,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-keep-listening-boyfriend-t-shirt-468158-1655941839-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:309,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-peeking-army-graphic-printed-boyfriend-t-shirt-519415-1680593017-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:399,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-stay-hydrated-back-graphic-printed-oversized-t-shirt-492911-1708436835-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:519,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-purple-oversized-t-shirt-502755-1700657112-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:489,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/lilac-bloom-half-sleeve-t-shirt-346170-1665664695-6.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:349,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-lumos-graphic-printed-boyfriend-t-shirt-589157-1682662875-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:419,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-aop-oversize-t-shirt-7-580365-1688995847-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:484,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-purple-oversized-t-shirt-507615-1675195034-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:429,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-white-freinds-life-m-printed-t-shirt-534623-1673585035-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:539,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-killer-mode-graphic-printed-oversized-t-shirt-594431-1708436795-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:481,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-boyfriend-t-shirt-582070-1698305484-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:359,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-motd-panda-t-shirt-479771-1655815714-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:399,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-pink-avoiding-responsibilities-graphic-printed-t-shirt-585778-1682002484-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:449,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-pink-party-planning-committee-graphic-printed-oversized-t-shirt-585749-1708519418-1.jpg",
+            name:"Women's Black Camo Dress",
+            brand:"Bewakoof",
+            price:469,
+            size:"XS",
+            category:"Dress",
+            productID:"wom8"
+        },
+
+            {img:"https://images.bewakoof.com/t540/women-s-plain-high-neck-pocket-dress-navy-blue-321810-1638214347-1.jpg",
+            name:"Women's Plain High Neck Pocket Dress Navy Blue",
+            brand:"Bewakoof",
+            price:499,
+            size:"XS",
+            category:"Dress",
+            productID:"wom9"},
+
+            {img:"https://images.bewakoof.com/t540/tie-n-dye-boyfriend-dress-421618-1647430062-1.jpg",
+            name:"Women's White & Purple Tie N Dye Boyfriend Dress",
+            brand:"Bewakoof",
+            price:649,
+            size:"XS",
+            category:"Dress",
+            productID:"wom10"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-checks-shirt-tunic-300442-1638212790-1.jpg",
+            name:"Women's Checks Shirt Tunic",
+            brand:"High Star",
+            price:688,
+            size:"XS",
+            category:"Dress",
+            productID:"wom11"},
+
+            {img:"https://images.bewakoof.com/t540/black-half-sleeve-round-neck-t-shirt-dress-393264-1634714340-1.jpg",
+            name:"Black Half Sleeve Round Neck Loungewear T-shirt Dress",
+            brand:"High Star",
+            price:375,
+            size:"XS",
+            category:"Dress",
+            productID:"wom12"},
+
+            {img:"https://images.bewakoof.com/t540/black-printed-3-4th-sleeve-v-neck-ethnic-flared-dress-403809-1634031784-1.jpg",
+            name:"Women's Printed Kurti Dress",
+            brand:"High Star",
+            price:599,
+            size:"M",
+            category:"Dress",
+            productID:"wom13"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-sleeveless-ethnic-dress-413676-re-shoot-1639384220-1.jpg",
+            name:"Women's Sleeveless Ethnic Dress",
+            brand:"High Star",
+            price:706,
+            size:"M",
+            category:"Dress",
+            productID:"wom14"},
+
+            {img:"https://images.bewakoof.com/t540/women-shirt-dresses-women-s-full-sleeves-shirt-dresses-300440-1607660736.jpg",
+            name:"Women's Solid Tape Tunic",
+            brand:"High Star",
+            price:688,
+            size:"M",
+            category:"Dress",
+            productID:"wom15"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-printed-puff-sleeves-dress-365148-1638218605-1.jpg",
+            name:"Women's Printed Puff Sleeves Dress",
+            brand:"Kotty",
+            price:449,
+            size:"M",
+            category:"Dress",
+            productID:"wom16"},
+
+            {
+            img:"https://images.bewakoof.com/t640/women-s-blue-baggy-stright-fit-cropped-cargo-jeans-624274-1708329058-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:999,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-baggy-stright-fit-cropped-cargo-jeans-624272-1708329020-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1199,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-baggy-straight-fit-distressed-jeans-624267-1708328981-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1049,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-baggy-straight-fit-distressed-jeans-624257-1708328943-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1049,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-straight-fit-high-rise-jeans-jet-black-625162-1706594095-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1149,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-straight-fit-high-rise-cargo-jeans-dark-brown-625169-1709201513-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1799,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-straight-fit-high-rise-jeans-blue1-625178-1706594036-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1299,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-straight-fit-high-rise-jeans-rinse-blue-625170-1709187510-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1599,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-straight-fit-high-rise-cargo-jeans-jet-black-625177-1709231357-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1599,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-straight-fit-high-rise-cargo-jeans-625173-1709187347-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1599,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-straight-fit-high-rise-cargo-jeans-black-625179-1709201405-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1599,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-straight-fit-high-rise-cargo-jeans-blue-625163-1709231330-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1699,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-wide-leg-high-rise-jeans-dark-brown-625168-1707311541-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1499,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-baggy-wide-leg-jeans-624271-1707215634-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1049,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-beige-straight-fit-high-rise-jeans-625172-1709231435-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1499,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-straight-fit-high-rise-jeans-white-625166-1709201573-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1399,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-wide-leg-high-rise-jeans-blue-625175-1706594710-1.jpghttps://images.bewakoof.com/t640/women-s-blue-wide-leg-high-rise-jeans-blue-625175-1706594710-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1399,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-straight-fit-high-rise-jeans-bleach-blue-625181-1706594287-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1599,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-straight-fit-high-rise-jeans-blue-625176-1706594405-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1599,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-wide-leg-high-rise-jeans-white-625171-1706594934-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1499,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-tapered-fit-high-rise-jeans-rinse-blue-625167-1706594191-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1299,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-beige-tapered-fit-high-rise-jeans-beigee-625165-1706594614-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1599,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-baggy-wide-leg-jeans-624273-1708436806-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1049,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-baggy-tapered-fit-jeans-624269-1700137066-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1049,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-baggy-tapered-fit-jeans-624270-1701447423-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:999,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-baggy-wide-leg-jeans-624275-1708329363-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1049,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-dark-blue-flared-jeans-634597-1710741202-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:989,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-dark-blue-applique-flared-jeans-634603-1710740792-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:989,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-light-blue-straight-fit-cargo-carpenter-jeans-634604-1710741164-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:879,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-dark-blue-applique-flared-jeans-634603-1710740792-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:989,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-light-blue-straight-fit-cargo-carpenter-jeans-634604-1710741164-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:879,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-laser-cut-baggy-oversized-jeans-634085-1710297291-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1499,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-flared-baggy-jeans-633797-1709279603-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:989,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-flared-fit-jeans-633799-1709279634-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:879,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-baggy-relaxed-fit-distressed-jeans-633687-1709015625-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1499,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-laser-rush-baggy-oversized-jeans-634083-1710297221-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1499,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-distressed-super-loose-fit-jeans-629043-1703076741-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1043,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-straight-fit-jeans-608703-1691661717-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:803,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-flared-jeansblack-628666-1701931838-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1109,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-straight-fit-jeans-blue-629047-1703076774-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:903,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-jeans-594462-1685016151-1.JPG",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:803,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-carpenter-jeans-628218-1701258487-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:2519,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-distressed-super-loose-fit-jeans-blue-628667-1701931810-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1190,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-bootcut-jeans-608704-1691661652-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:809,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-bootcut-jeans-594472-1685015761-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:809,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-jeans-594466-1685015992-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:803,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-dyed-flared-jeans-y114612-595967-1686142073-1.JPG",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:874,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-straight-fit-jeans-594469-1685015733-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:803,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-skinny-fit-jeans-592238-1684147474-1.JPG",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:769,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-jeans-592251-1684148963-1.JPG",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:804,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-super-skinny-fit-jeans-584951-1679563236-1.JPG",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:874,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-super-skinny-fit-jeans-584951-1679563236-1.JPG",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:874,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-super-skinny-fit-jeans-584961-1679563752-1.JPG",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:804,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-straight-fit-jeans-585095-1679660957-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1154,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-bootcut-jeans-585076-1679661138-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1364,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-washed-super-skinny-fit-jeans-584973-1679564310-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1039,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-loose-comfort-fit-jeans-585079-1679661048-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1154,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-jeans-594461-1685016100-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:803,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-washed-wide-leg-fit-jeans-585105-1679661080-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1154,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-washed-wide-leg-fit-jeans-585071-1679661500-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1154,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-washed-boyfriend-fit-jeans-584948-1679564384-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1169,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-washed-distressed-boyfriend-fit-jeans-584965-1679563566-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:944,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-white-loose-comfort-fit-jeans-585065-1679660845-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1364,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-washed-wide-leg-fit-jeans-585066-1679661277-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:1154,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-straight-fit-ripped-jeans-555207-1668673928-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:899,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-straight-fit-ripped-jeans-555204-1668674018-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:899,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-straight-fit-jeans-556360-1669122604-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:803,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-straight-fit-jeans-556365-1669122951-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:803,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/kotty-women-s-blue-straight-fit-jeans-564942-1671796783-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:803,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-mom-fit-ripped-jeans-555195-1668673789-1.jpg",
+            name:"Women's Black Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:799,
+            size:"M",
+            category:"Jeans",
+            productID:"wom17"
+        },
+        
+        
+        
+
+
+
+            {img:"https://images.bewakoof.com/t540/women-s-blue-high-rise-slim-fit-jeans-509187-1654873935-1.jpg",
+            name:"Women's Blue High Rise Slim Fit Jeans",
+            brand:"Kotty",
+            price:874,
+            size:"M",
+            category:"Jeans",
+            productID:"wom18"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-blue-wide-leg-high-rise-jeans-509279-1654873438-1.jpg",
+            name:"Women's Blue Wide Leg High Rise Jeans",
+            brand:"Kotty",
+            price:920,
+            size:"M",
+            category:"Jeans",
+            productID:"wom19"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-blue-high-rise-relaxed-fit-denim-joggers-509280-1654874123-1.jpg",
+            name:"Women's Blue High Rise Relaxed Fit Denim Joggers",
+            brand:"Kotty",
+            price:960,
+            size:"L",
+            category:"Jeans",
+            productID:"wom20"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-black-straight-fit-jeans-504401-1654689414-1.jpg",
+            name:"Women's Black Straight Fit Jeans",
+            brand:"Kotty",
+            price:899,
+            size:"L",
+            category:"Jeans",
+            productID:"wom21"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-grey-slim-fit-jeans-509148-1654873842-1.jpg",
+            name:"Women's Grey Slim Fit Jeans",
+            brand:"Kotty",
+            price:760,
+            size:"L",
+            category:"Jeans",
+            productID:"wom22"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-black-relaxed-fit-denim-joggers-509271-1654873615-1.jpg",
+            name:"Women's Black Relaxed Fit Denim Joggers",
+            brand:"Kotty",
+            price:1002,
+            size:"L",
+            category:"Jeans",
+            productID:"wom23"},
+
+            {img:"https://images.bewakoof.com/t540/women-s-blue-slim-fit-jeans-509227-1654873623-1.jpg",
+            name:"Women's Blue Slim Fit Jeans",
+            brand:"Harpa",
+            price:809,
+            size:"L",
+            category:"Jeans",
+            productID:"wom24"},
+
+            {
+            img:"https://images.bewakoof.com/t640/women-s-beige-oversized-parachute-pants-625450-1702643810-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:549,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t320/women-s-black-super-loose-fit-wide-leg-pants-casual-pants-620032-1705498322.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:549,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t320/women-s-grey-super-loose-fit-wide-leg-pants-casual-pants-620031-1705498322.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:549,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-straight-cargo-pants-13-620015-1702644202-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:549,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-straight-cargo-pants-620005-1708328865-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:549,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-straight-cargo-pants-620020-1708328904-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:549,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-straight-cargo-pants-620020-1708328904-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:549,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-all-over-printed-slim-fit-flared-pants-615998-1702286881-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:649,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-straight-cargo-pants-620014-1708329141-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:449,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-straight-fit-cargo-pants-585677-1703163701-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:949,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-pink-oversized-parachute-pants-625448-1702643530-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:749,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-peach-oversized-parachute-pants-625452-1702644164-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:799,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-multicolor-all-over-printed-slim-fit-flared-pants-615996-1702287161-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:619,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-oversized-cargo-pants-609845-1708329092-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1049,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-oversized-cargo-pants-609853-1708329313-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1299,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-oversized-parachute-pants-628754-1706594902-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1199,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-oversized-parachute-pants-jet-black-628765-1707312547-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1299,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-grey-oversized-parachute-pants-628729-1706594838-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1199,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-oversized-parachute-pants-628735-1706594373-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1349,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-black-oversized-parachute-pants-black-628766-1706594870-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1199,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-oversized-parachute-pants-628726-1706594437-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1199,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-oversized-parachute-pants-628736-1706594063-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1399,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-all-over-printed-oversized-casual-pants-589659-1692782430-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1199,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-all-over-printed-oversized-casual-pants-589653-1692782492-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:999,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-indigo-acid-wash-wide-leg-pants-11-585126-1697439474-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:899,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-oversized-parachute-pants-ashley-blue-628761-1707312454-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1249,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-oversized-parachute-pants-628762-1706594529-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1149,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-orange-oversized-parachute-pants-628732-1706594497-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1299,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-blue-oversized-parachute-pants-628725-1706594737-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1199,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-multicolor-all-over-printed-flared-pants-615999-1706009108-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:699,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-grey-acid-wash-wide-leg-pants-12-585127-1707312226-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1299,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-cargo-pants-585718-1708328826-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:999,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-grey-oversized-parachute-pants-589661-1707292632-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1049,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-off-white-oversized-parachute-pants-589663-1707292768-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1199,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-oversized-casual-pants-589652-1692782198-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:835,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-green-oversized-cargo-pants-609847-1708329268-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1499,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-pink-oversized-casual-pants-589665-1692782342-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1049,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+        {
+            img:"https://images.bewakoof.com/t640/women-s-brown-oversized-casual-pants-589664-1692782403-1.jpg",
+            name:"Black Patch Pocket Pants",
+            brand:"High Star",
+            price:1049,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom25"
+        },
+
+
+            {img:"https://images.bewakoof.com/t540/dillinger-women-s-maroon-typographic-wide-leg-pants-casual-pants-422524-1635323366.jpg",
+            name:"Women's Maroon Solid Wide Leg Pants",
+            brand:"Bewakoof",
+            price:854,
+            size:"XL",
+            category:"Casual Pants",
+            productID:"wom26"},
+
+    ];
+    
+
+    let displaydatawomen=JSON.parse(localStorage.getItem("displayitemwomen")) || []
+
+
+    let productsCont = document.getElementById("products");
+
+    let sortCatg=document.getElementById("filter");
+
+    let sortBrd=document.getElementById("brandFilter");
+
+    let sortSize=document.getElementById("sizeFilter");
+    
+
+    function displayProducts(womensData){
+        productsCont.innerHTML="";
+        womensData.forEach(function(element){
+            let product=document.createElement("div");
+
+      
+            product.addEventListener("click",function(){
+                displayfunwomen(element)
+            })
+
+
+            let img=document.createElement("img");
+            img.src=element.img;
+            let name=document.createElement("h2");
+            name.innerText=element.brand;
+            let category=document.createElement("p");
+            category.innerText=element.name;
+            let price=document.createElement("h4");
+            price.innerText="₹"+element.price;
+
+            
+            product.append(img,name,category,price);
+            productsCont.append(product);
+        })
+    }
+
+
+    function displayfunwomen (element){
+    event.target
+    console.log(element)
+    displaydatawomen.push(element)
+    localStorage.setItem("displayitemwomen",JSON.stringify(displaydatawomen))
+    window.location.href="womendisplay.html"
+}
+
+
+
+
+    displayProducts(womensData);
+
+    //[Function for Sort by category-]
+    sortCatg.addEventListener("change",function(){
+        if(sortCatg.value==="All"){
+            displayProducts(womensData);
+        }else{
+            let filtered=womensData.filter(function(element){
+                return element.category===sortCatg.value;
+            })
+            displayProducts(filtered);
+        }
+    })
+    //[Function for Sort by Brand-]
+    sortBrd.addEventListener("change",function(){
+        if(sortBrd.value==="Brand"){
+            displayProducts(womensData);
+        }
+        else
+        {
+            let filteredBr=womensData.filter(function(element){
+                return element.brand===sortBrd.value;
+            })
+            displayProducts(filteredBr);
+        }
+    })
+    //[Function for Sort by Size-]
+    sortSize.addEventListener("change",function(){
+        if(sortSize.value==="Size"){
+            displayProducts(womensData);
+        }
+        else
+        {
+            let filteredSz=womensData.filter(function(element){
+                return element.size===sortSize.value;
+            })
+            displayProducts(filteredSz);
+        }
+    })
+
+    //[ Price Filter]
+
+    document.getElementById("priceFilter").addEventListener("change", priceFilter);
+
+function priceFilter(){
+    let selected=document.querySelector("#priceFilter").value;
+
+    // console.log(selected)
+
+    if(selected=="Lower To High"){
+        let x=womensData.sort(function(a,b){
+            if(a.price>b.price) return 1;
+            if(a.price<b.price) return -1;
+
+            return 0;
+        })
+        displayProducts(x);
+    }
+    else if(selected=="Higher To Lower"){
+        let x=womensData.sort(function(a,b){
+            if(a.price>b.price) return -1;
+            if(a.price<b.price) return 1;
+
+            return 0;
+        })
+        displayProducts(x);
+    }
+    else if(selected==="price"){
+        return 0;
+    } 
+    displayProducts(x);
+}
+    
+</script>
